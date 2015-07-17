@@ -7,5 +7,10 @@
     </li>
   <% end %>
 </ul>
-
+<% if logged_in? %>
 <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+<% end %>
+<br>
+<br>
+<br>
+  <%= link_to "Go to Tag Index", tags_path %>
